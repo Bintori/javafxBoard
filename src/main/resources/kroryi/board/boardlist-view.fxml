@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="4.0" prefHeight="54.0" prefWidth="793.0" text="Board List">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <TableView fx:id="boardTableView" layoutX="227.0" layoutY="60.0" prefHeight="360.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="colNo" prefWidth="75.0" text="No" />
+          <TableColumn fx:id="colTitle" prefWidth="156.0" text="Title" />
+            <TableColumn fx:id="colWriter" prefWidth="68.0" text="Writer" />
+            <TableColumn fx:id="colRegDate" prefWidth="91.0" text="Reg Date" />
+            <TableColumn fx:id="colUpdDate" prefWidth="89.0" text="Upd Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="301.0" layoutY="455.0" mnemonicParsing="false" onAction="#moveToInsert" prefHeight="29.0" prefWidth="83.0" text="Write" />
+      <Button layoutX="721.0" layoutY="455.0" mnemonicParsing="false" onAction="#Close" text="Close" />
+      <Pagination layoutX="441.0" layoutY="420.0" prefHeight="69.0" prefWidth="200.0" />
+      <VBox layoutX="119.0" layoutY="60.0" prefHeight="360.0" prefWidth="108.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Button" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

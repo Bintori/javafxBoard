@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="880.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="252.0" layoutY="14.0" prefHeight="93.0" prefWidth="344.0" styleClass="title-label" text="Welcome">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="211.0" prefHeight="33.0" prefWidth="56.0" text="ID :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="274.0" prefHeight="33.0" prefWidth="56.0" text="PW :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfId" layoutX="296.0" layoutY="204.0" promptText="아이디를 입력하세요.">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="tfPw" layoutX="296.0" layoutY="265.0" prefHeight="49.0" prefWidth="272.0" promptText="비밀번호를 입력하세요.">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="583.0" layoutY="203.0" mnemonicParsing="false" onAction="#login" prefHeight="49.0" prefWidth="96.0" text="Login">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="594.0" layoutY="275.0" mnemonicParsing="false" onAction="#gotRegister" styleClass="round-button" text="Register">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="308.0" layoutY="117.0" prefHeight="49.0" prefWidth="224.0" text="Login">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
